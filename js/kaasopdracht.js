@@ -14,6 +14,9 @@ var likestone = true;
 var bluethings = false;
 var korst = true;
 
+document.getElementById("getcheese").onclick= mycheese;
+
+function mycheese(){
 if (yellow == true){
 	if (holes == true){
 		if (expensive == true){
@@ -30,7 +33,7 @@ if (yellow == true){
 				document.write("De kaas: " + answer4)
 	}
 }else if (bluethings == true){
-	if (korst = true){
+	if (korst == true){
 		document.write("De kaas: " + answer5)
 	}
 	else{
@@ -41,4 +44,5 @@ if (yellow == true){
 }
 	else{
 		document.write("De kaas: " + answer8)
+}
 }
