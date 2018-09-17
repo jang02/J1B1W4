@@ -44,5 +44,5 @@ if (yellow == true){
 }
 	else{
 		document.write("De kaas: " + answer8)
-}
+	}
 }
