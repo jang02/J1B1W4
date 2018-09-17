@@ -1,48 +1,32 @@
-var answer1 = "Emmenthaler";
-var answer2 = "Leerdammer";
-var answer3 = "Parmigiano Reggiano";
-var answer4 = "Goudse kaas";
-var answer5 = "Blue de Rochbaron";
-var answer6 = "Fourme d'Ambert";
-var answer7 = "Camembert";
-var answer8 = "Mozzarella";
-
-var yellow = false;
-var holes = true;
-var expensive = true;
-var likestone = true;
-var bluethings = false;
-var korst = true;
-
 document.getElementById("getcheese").onclick= mycheese;
 
 function mycheese(){
-if (yellow == true){
-	if (holes == true){
-		if (expensive == true){
-			document.write("De kaas: " + answer1)
+if (prompt('Is de kaas geel?\nVul ja of nee in.') == "ja"){
+	if (prompt('Zitten er gaten in?\nVul ja of nee in.') == "ja"){
+		if (prompt('Is de kaas belachelijk duur?\nVul ja of nee in.') == "ja"){
+			document.write("De kaas: Emmenthaler")
 		}
 		else{
-			document.write("De kaas: " + answer2)
+			document.write("De kaas: Leerdammer")
 		}
 		}
-			else if (likestone == true){
-				document.write("De kaas: " + answer3)
+			else if (prompt('Is de kaas hard als steen?\nVul ja of nee in.') == "ja"){
+				document.write("De kaas: Parmigiano Reggiano")
 		}
 			else{
-				document.write("De kaas: " + answer4)
+				document.write("De kaas: Goudse kaas")
 	}
-}else if (bluethings == true){
-	if (korst == true){
-		document.write("De kaas: " + answer5)
+}else if (prompt('Heeft de kaas blauwe schimmels?\nVul ja of nee in.') == "ja"){
+	if (prompt('Heeft de kaas een korst?\nVul ja of nee in.') == "ja"){
+		document.write("De kaas: Blue de Rochbaron")
 	}
 	else{
-		document.write("De kaas: " + answer6)
+		document.write("De kaas: Fourme d'Ambert")
 	}
-}else if (korst == true){
-	document.write("De kaas: " + answer7)
+}else if (prompt('Heeft de kaas een korst?\nVul ja of nee in.') == "ja"){
+	document.write("De kaas: Camembert")
 }
 	else{
-		document.write("De kaas: " + answer8)
+		document.write("De kaas: Mozzarella")
 	}
 }
